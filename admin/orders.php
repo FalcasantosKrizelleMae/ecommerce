@@ -1,5 +1,5 @@
 <?php
- $page ='Products'; 
+ $page ='Orders'; 
  include '../includes/connection.php';
 ?>
 
@@ -23,18 +23,11 @@
       <div class="main container">
          <div class="panel panel-default">
             <div class="panel-heading">
-               <h1 class="panel-title lead">Products page</h1>
+               <h1 class="panel-title lead">List of ORDERS</h1>
             </div>
 
             <div class="panel-body">
-               <div class="mb-5">
-                  <div class="pull-left lead">List of items</div>
-
-                  <a href="add-product.php" class="btn btn-primary pull-right">
-                     Add new item
-                  </a>
-               </div>
-
+              
                <table class="table mt-3 table-bordered">
                   <thead class="bg-light text-warning">
                      <th>Item ID</th>
@@ -46,10 +39,10 @@
                      <th class="text-center">Action</th>
                   </thead>
                   <tbody>
-                     <?php
-                        $query=mysqli_query($con,"select * from `items`");
+                     <!-- <?php
+                        $query=mysqli_query($con,"select * from `orders`");
                         while($row=mysqli_fetch_array($query)){
-                     ?>
+                     ?> -->
                      <tr class="">
                         <th class="pt-4"><?php echo $row['id']?></th>
                         <td class="">

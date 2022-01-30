@@ -9,6 +9,8 @@
      <link href="../bootstrap3/css/bootstrap.min.css" rel="stylesheet">
      <link href="./css/main.css" rel="stylesheet">
 
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body> <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -20,27 +22,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">ADMIN PAGE</a>
+                    <a class="navbar-brand" href="#">BRAND</a>
                </div>
-               <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                          <li class="<?php if($page=='Dashboard'){echo "active-btn";}?>"><a href="index.php">Dashboard</a></li>
                          <li class="<?php if($page=='Products'){echo "active-btn";}?>"><a href="products.php">Products</a></li>
-                         <li class="<?php if($page=='Orders'){echo "active-btn";}?>"><a href="#">Orders</a></li>
-                         <li class="<?php if($page=='History'){echo "active-btn";}?>"><a href="#">Purchase History</a></li>
-                         <li class="<?php if($page=='Status'){echo "active-btn";}?>"><a href="#">Delivery/Pickup status</a></li>
+                         <li class="<?php if($page=='Orders'){echo "active-btn";}?>"><a href="orders.php">Orders</a></li>
+                         <li class="<?php if($page=='Status'){echo "active-btn";}?>"><a href="status.php">Delivery/Pickup Status</a></li>
+                          <li ><a href="#"></a></li>
+                            <li ><a href="#"></a></li>
                          <li
-                         class="dropdown" class="<?php if($page=='Products'){echo "active";}?>">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                         class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ADMIN <span class="caret"></span></a>
                          <ul class="dropdown-menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li class="dropdown-header">Nav header</li>
-                              <li><a href="#">Separated link</a></li>
-                              <li><a href="#">One more separated link</a></li>
-                              
+                              <li class="dropdown-header">Account settings</li>
+                              <li><a onclick='confirm("Are you sure you want to log out?");' href="../index.php">Logout</a></li> 
                          </ul>
                          </li>
                     </ul>

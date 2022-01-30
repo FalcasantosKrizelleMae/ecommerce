@@ -1,5 +1,5 @@
 <?php
- $page ='Products'; 
+ $page ='Status'; 
  include '../includes/connection.php';
 ?>
 
@@ -23,16 +23,12 @@
       <div class="main container">
          <div class="panel panel-default">
             <div class="panel-heading">
-               <h1 class="panel-title lead">Products page</h1>
+               <h1 class="panel-title lead">Status page</h1>
             </div>
 
             <div class="panel-body">
                <div class="mb-5">
-                  <div class="pull-left lead">List of items</div>
-
-                  <a href="add-product.php" class="btn btn-primary pull-right">
-                     Add new item
-                  </a>
+                  <div class="pull-left lead">List of orders</div>
                </div>
 
                <table class="table mt-3 table-bordered">

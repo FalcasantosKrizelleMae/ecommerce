@@ -1,11 +1,10 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$db = "fursnclawsdb";
+$con=mysqli_connect("localhost","root","","ecommerce");
 
-if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$db))
-{
-	die("Failed to connect!");
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
 }
+
+?>
