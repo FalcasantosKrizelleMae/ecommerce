@@ -1,0 +1,11 @@
+.main {
+   margin-top: 100px;
+}
+
+* {
+   font-family: 'Urbanist', sans-serif;
+}
+
+.active-btn {
+   background-color: black;
+}
