@@ -28,7 +28,7 @@
 
             <div class="panel-body">
                <div class="mb-5">
-                  <div class="pull-left lead">List of orders</div>
+                  <div class="pull-left lead">Delivery / Pickup</div>
                </div>
 
                <table class="table mt-3 table-bordered">
@@ -42,47 +42,9 @@
                      <th class="text-center">Action</th>
                   </thead>
                   <tbody>
-                     <?php
-                        $query=mysqli_query($con,"select * from `items`");
-                        while($row=mysqli_fetch_array($query)){
-                     ?>
-                     <tr class="">
-                        <th class="pt-4"><?php echo $row['id']?></th>
-                        <td class="">
-                           <img
-                              src="../<?php echo $row['img']?>"
-                              height="60px"
-                           />
-                           <img
-                              src="../<?php echo $row['img2']?>"
-                              height="60px"
-                           />
-                        </td>
-                        <td class="pt-4"><?php echo $row['item_name']?></td>
-                        <td class="pt-4"><?php echo $row['price']?></td>
-                        <td class="pt-4"><?php echo $row['dimension']?></td>
-                        <td class="pt-4"><?php echo $row['category']?></td>
-                        <td class="text-center">
-                           <a
-                              class="btn btn-success py-2"
-                              data-toggle="modal"
-                              data-target="#update-product"
-                              title="Edit product"
-                              ><i class="bx bxs-edit-alt"></i>Update</a
-                           >
-
-                           <a
-                              href="backend/delete.php?id=<?php echo $row['id'];?>"
-                              class="btn btn-danger py-2"
-                              class="tooltip"
-                              title="Delete product"
-                              onclick="return confirm('Are you sure you want to delete this item? ');"
-                              >Delete</a
-                           >
-                        </td>
-                     </tr>
-                     <?php
-                          } ?>
+                     
+                    
+                    
                   </tbody>
                </table>
             </div>

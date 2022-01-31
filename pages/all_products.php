@@ -47,7 +47,7 @@ include "../includes/connection.php";
                while($row=mysqli_fetch_array($query)){
           ?>
             <div class="col-md-3 shadow-sm p-4 rounded m-3">
-               <a href="" class="text-decoration-none">
+               <a href="./view_product.php?id=<?php echo $row['id'] ?>" class="text-decoration-none">
                   <img
                      src="../<?php echo $row['img']?>"
                      class="img-responsive w-100 rounded"
